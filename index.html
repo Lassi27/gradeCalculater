@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grade calculator</title>
+    <script src="script.js"></script>
+    <link rel ="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1> Grade Calculator </h1>
+
+<table id="gradeTable" border=”1” cellspacing=”2” cellpadding=”4”>
+    <tr id="title">
+        <td>Class</td>
+        <td>Class Grades</td>
+        <td> %weight</td>
+    </tr>
+
+    <tr id="1">
+        <td>Tests</td>
+        <td><input id="testScore"  placeholder="grades" value="70,80,90"></td>
+        <td><input id="testWeight" placeholder="weight"  value="20"></td>
+    </tr>
+    <tr id="2">
+        <td>Homework</td>
+        <td><input id="hwScore"  placeholder="grades" value="70,80,90"></td>
+        <td><input id="hwWeight" placeholder="weight" value="10"></td>
+    </tr>
+    <tr id="3">
+        <td> Quizzes</td>
+        <td><input id="quizScore"  placeholder="grades" value="70,80,90"></td>
+        <td><input id="quizWeight" placeholder="weight" value="10"></td>
+    </tr>
+    <tr id="4">
+        <td> projects</td>
+        <td><input id="projectScore" placeholder="grades" value="70,80,90"></td>
+        <td><input id="projectWeight" placeholder="weight" value="10"></td>
+    </tr>
+    <tr id="5">
+        <td> participation</td>
+        <td><input id="partScore" placeholder="grades" value="70,80,90"></td>
+        <td><input id="partWeight" placeholder="weight" value="20"></td>
+    </tr>
+</table>
+<table id="targetTable" border="1" cellspacing="2" cellpadding="4">
+    <tr id="sixth">
+        <td>target Grade</td>
+        <td>Weight of final</td>
+    </tr>
+    <tr id="seventh">
+        <td><input type="text " id="targetGrade" placeholder="grade"value="80"></td>
+        <td><input type="text" id="weightFinal" placeholder="weight(%)"value="30"></td>
+    </tr>
+</table>
+
+<div style="text-align: center;">
+<button onclick="calculateCurrentGrade()" id="Button1">calculate grade</button>
+<button onclick="gradeWanted()" id="Button2">target Grade</button>
+<button onclick="reset()" id="Button3">reset page</button>
+
+<div id="currentGrade"></div>
+
+<div id="gradeWanted"></div>
+
+</div>
+
+
+
+
+
+</body>
+
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
